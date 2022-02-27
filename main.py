@@ -38,7 +38,7 @@ with after:
             st.stop()
         cv2.imwrite("after.jpg",src[faces[0][1]:faces[0][1]+faces[0][3],faces[0][0]:faces[0][0]+faces[0][2]])
         src=Image.open("after.jpg")
-        st.subheader("Before")
+        st.subheader("After")
         st.image(src)
 
         with open("after.jpg", "rb") as file:
