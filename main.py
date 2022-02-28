@@ -9,7 +9,7 @@ def read_model():
     face_cascade = cv2.CascadeClassifier(face_cascade_path)
     return face_cascade
 
-file = st.sidebar.file_uploader("File uploader",type=["jpg","png"])
+file = st.sidebar.file_uploader("File uploader",type=["jpg","png","jpeg"])
 
 if not file:
     st.warning('Please input a image')
